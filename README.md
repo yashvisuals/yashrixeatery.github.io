@@ -1,2 +1,2 @@
 # yashrixeatery.github.io
-My Eatery webpage with integrated chatbot
+I built a dynamic online food delivery webpage YashRix Eatery using HTML, CSS, and JavaScript. The webpage showcases a menu with various food items. I also integrated a chatbot which allows users to see menu, placing an order and track their real time order updates.  By harnessing the power of Python, FastAPI, Dialogflow and MySQL I crafted a comprehensive user experience that simplifies the ordering process and enhances customer interaction.
