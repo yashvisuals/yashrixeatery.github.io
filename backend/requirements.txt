@@ -1,2 +1,38 @@
-mysql-connector-python
-fastapi[all]
+import java.util.*;
+public class UserInterface {
+    public static Cadet extractDetails(String cadetDetails) {
+        String[] detailsArray = cadetDetails.split(":");
+
+        String cadetNumber = detailsArray[0];
+        String cadetName = detailsArray[1];
+        String groupName = detailsArray[2];
+        String gender = detailsArray[3];
+        int age = Integer.parseInt(detailsArray[4]);
+
+        return new Cadet(cadetNumber, cadetName, groupName, gender, age);
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter Cadet Details (cadetNumber:cadetName:groupName:gender:age)");
+
+        // Example input: CADET001:John:Tigers:Male:18
+        String cadetDetails = scanner.nextLine();
+
+        Cadet cadet = extractDetails(cadetDetails);
+        if(cadet.calculateFeesToBePaid()== -1){
+            System.out.println("Invalid Input");
+        }
+        else{
+        // Displaying extracted details
+        System.out.println("Cadet Number: " + cadet.getCadetNumber());
+        System.out.println("Cadet Name: " + cadet.getCadetName());
+        System.out.println("Group Name: " + cadet.getGroupName());
+        System.out.println("Gender: " + cadet.getGender());
+        System.out.println("Age: " + cadet.getAge());
+        System.out.println("Fees to be paid by the Cadet: " + cadet.calculateFeesToBePaid());
+    }
+    scanner.close();
+}
+}
