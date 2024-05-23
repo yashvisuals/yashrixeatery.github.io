@@ -893,7 +893,7 @@ footer .end span{
 
 /* Responsive adjustments */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 480px) {
     section .main {
         display: flex;
         flex-direction: column;
