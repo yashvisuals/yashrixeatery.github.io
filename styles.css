@@ -13,11 +13,20 @@ section{
     width: 100%;
     height: 100vh;
 }
- 
-.nav-header {
-    display: none;
+
+label #btn,
+label #cancel{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
 }
 
+#check{
+    display:none;
+}
 section nav{
     display: flex;
     justify-content: space-around;
@@ -901,29 +910,53 @@ footer .end span{
         justify-content: center; /* Center content vertically */
         padding-top: 130px;
     }
+
+    nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center; 
     
+    }
+
     .icon{
-        display:none;
+        display: none;
+        
     }
 
-    .nav-menu {
-        display: none;
-
+    label #btn{
+        display:block;
+        margin-left: auto;
     }
 
     
 
-    .nav-header {
+    ul{
+        position:fixed;
+        width:100%;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    section nav ul li{
         display:block;
+        margin: 40px 0;
+        line-height: 30px;
     }
 
-    .nav-menu.active {
-        display: block;
+    section nav ul li a{
+        font: 20px;
     }
 
-    .nav-menu li {
-        margin-right: 0;
-        margin-bottom: 10px;
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ label #cancel{
+        display:block;
     }
 
     section .main .men_text {

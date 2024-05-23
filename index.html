@@ -7,6 +7,7 @@
     <title>YashRix Eatery</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -16,10 +17,12 @@
                 <img src="image/logo.png">
             </div>
 
-            <div class="nav-header">
-                <div class="nav-toggle" id="nav-toggle">&#9776;</div>
-            </div>
-            
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" style="color:black" id="btn"></i>
+                <i class="fas fa-times" style="color:black" id="cancel"></i>
+            </label>
+
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
