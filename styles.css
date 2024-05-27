@@ -902,7 +902,7 @@ footer .end span{
 
 /* Responsive adjustments */
 
-@media only screen and (max-width: 393px) {
+@media only screen and (max-width: 768px) {
     section .main {
         display: flex;
         flex-direction: column;
@@ -911,11 +911,9 @@ footer .end span{
         padding-top: 130px;
     }
 
-    nav{
+    .check{
         display:flex;
-        justify-content: space-between;
-        align-items: center; 
-    
+        width: 20px;
     }
 
     .icon{
@@ -926,9 +924,21 @@ footer .end span{
     label #btn{
         display:block;
         margin-left: auto;
+        
     }
 
-    
+    label #cancel{
+        display:none;
+        
+    }
+
+    nav .nav-active #btn{
+        display: none;
+    }
+
+    nav .nav-active #cancel{
+        display: block;
+    }
 
     ul{
         position:fixed;
