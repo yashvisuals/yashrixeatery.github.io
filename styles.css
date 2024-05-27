@@ -27,6 +27,11 @@ label #cancel{
 #check{
     display:none;
 }
+
+.navbar{
+    width:100%;
+}
+
 section nav{
     display: flex;
     justify-content: space-around;
@@ -914,7 +919,7 @@ footer .end span{
     .navbar{
         width:100%;
     }
-    
+
     .check{
         display:flex;
         width: 20px;
