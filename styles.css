@@ -911,6 +911,10 @@ footer .end span{
         padding-top: 130px;
     }
 
+    .navbar{
+        width:100%;
+    }
+    
     .check{
         display:flex;
         width: 20px;
